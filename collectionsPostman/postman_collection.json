@@ -1,0 +1,192 @@
+{
+	"info": {
+		"_postman_id": "a7c8e5da-70ff-4594-91bb-09f24dee5f48",
+		"name": "BUILDERS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Listar todos os clientes",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{localhostbuilder}}/api/cliente/v1?size=0&page=1",
+					"host": [
+						"{{localhostbuilder}}"
+					],
+					"path": [
+						"api",
+						"cliente",
+						"v1"
+					],
+					"query": [
+						{
+							"key": "size",
+							"value": "0"
+						},
+						{
+							"key": "page",
+							"value": "1"
+						}
+					]
+				},
+				"description": "Lista todo os clientes da api"
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar Cliente pelo seu id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/cliente/v1/e984c166-b8bc-4acb-bbf0-8e119bda09b1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"cliente",
+						"v1",
+						"e984c166-b8bc-4acb-bbf0-8e119bda09b1"
+					]
+				},
+				"description": "Lista todo os clientes da api"
+			},
+			"response": []
+		},
+		{
+			"name": "Adicionar novo cliente",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nome\": \"adicionado dno post agora mesmo\",\n    \"dataNascimento\": \"2021-08-14T19:31:06.510+00:00\",\n    \"sexo\": \"Sem definciça\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/cliente/v1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"cliente",
+						"v1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Deletar cliente",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nome\": \"adicionado dno post agora mesmo\",\n    \"dataNascimento\": \"2021-08-14T19:31:06.510+00:00\",\n    \"sexo\": \"Sem definciça\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/cliente/v1/e984c166-b8bc-4acb-bbf0-8e119bda09b1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"cliente",
+						"v1",
+						"e984c166-b8bc-4acb-bbf0-8e119bda09b1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Editar cliente",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nome\": \"adicionado dno post agora mesmo\",\n    \"dataNascimento\": \"2021-08-14T19:31:06.510+00:00\",\n    \"sexo\": \"Sem definciça\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/cliente/v1/e984c166-b8bc-4acb-bbf0-8e119bda09b1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"cliente",
+						"v1",
+						"e984c166-b8bc-4acb-bbf0-8e119bda09b1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Editar cliente Copy",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nome\": \"A asdf asd\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/cliente/v1/e984c166-b8bc-4acb-bbf0-8e119bda09b1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"cliente",
+						"v1",
+						"e984c166-b8bc-4acb-bbf0-8e119bda09b1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
